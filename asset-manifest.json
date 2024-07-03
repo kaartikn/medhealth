@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/medhealth/static/css/main.be0158ab.css",
+    "main.js": "/medhealth/static/js/main.d53f20eb.js",
+    "static/js/453.e5e0dc21.chunk.js": "/medhealth/static/js/453.e5e0dc21.chunk.js",
+    "static/media/lomotil.jpg": "/medhealth/static/media/lomotil.3f957063ea1c7147ed45.jpg",
+    "static/media/bg-img-2.jpg": "/medhealth/static/media/bg-img-2.5e8261245e98fa40a2e1.jpg",
+    "static/media/bg-img-1.jpg": "/medhealth/static/media/bg-img-1.84ecc531155d7e016d4d.jpg",
+    "static/media/stugeron.jpg": "/medhealth/static/media/stugeron.0ec216410075a578eb24.jpg",
+    "static/media/motilium.jpg": "/medhealth/static/media/motilium.5e93756797e41f26c7f8.jpg",
+    "static/media/voltaren.jpg": "/medhealth/static/media/voltaren.f953a5b93f1c05ee3d80.jpg",
+    "static/media/panadol.jpg": "/medhealth/static/media/panadol.25d411193a55374bde1c.jpg",
+    "static/media/bg-img-3.jpg": "/medhealth/static/media/bg-img-3.238167684c6e31b85493.jpg",
+    "static/media/clarityne.jpg": "/medhealth/static/media/clarityne.37fbffa2d14427e328ef.jpg",
+    "static/media/gelusil.jpg": "/medhealth/static/media/gelusil.1de2a44ce9e7f3e15960.jpg",
+    "static/media/charcoal.jpeg": "/medhealth/static/media/charcoal.13392f12f7aa59de6d89.jpeg",
+    "static/media/icon.svg": "/medhealth/static/media/icon.3c0f8c34775dbae80e79361bafe37c1b.svg",
+    "index.html": "/medhealth/index.html",
+    "main.be0158ab.css.map": "/medhealth/static/css/main.be0158ab.css.map",
+    "main.d53f20eb.js.map": "/medhealth/static/js/main.d53f20eb.js.map",
+    "453.e5e0dc21.chunk.js.map": "/medhealth/static/js/453.e5e0dc21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be0158ab.css",
+    "static/js/main.d53f20eb.js"
+  ]
+}
