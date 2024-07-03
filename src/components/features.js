@@ -7,6 +7,7 @@ import { faPills, faSuitcase, faQrcode, faCloudRain } from '@fortawesome/free-so
 const EssentialFeatures = () => {
   return (
 
+    
 
     <div className='d-flex justify-content-center'>
       <div className="container mt-3 text-start">
