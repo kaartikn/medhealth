@@ -1,0 +1,162 @@
+.hero-text {
+  padding: 40px;
+  text-align: left;
+  color: black;
+  z-index: 2;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.card-image-fit {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #f5eddf;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(64, 59, 57, 0.25);
+  filter: opacity(0.9);
+}
+
+/* .hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    justify-content: center; 
+    padding: 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-right: 10px; 
+  }
+} */
+
+
+/* 
+
+Hero CSS done
+
+*/
+
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.svg-white {
+  filter: invert(100%);
+}
+
+.svg-text-clor {
+  fill: #162032;
+}
+
+/* 
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex-grow: 1;
+} 
+*/
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; /* Clearer border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content fits inside the card */
+  transition: transform 0.2s; /* Add some interaction */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+.card-img-top {
+  height: 150px; /* Fixed height for images */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Separator between image and text */
+}
+
+.card-body {
+  flex-grow: 1;
+  padding: 15px; /* Increase padding */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.2rem; /* Increased font size */
+  margin-bottom: 10px;
+  color: #333; /* Darker text */
+}
+
+.card-text {
+  font-size: 0.9rem; /* Slightly increased font size */
+  color: #555; /* Softer text color */
+  line-height: 1.4; /* Improved readability */
+}
+
+
+
