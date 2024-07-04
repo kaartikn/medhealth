@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.be0158ab.css",
-    "main.js": "/static/js/main.1a81ad83.js",
-    "static/js/453.e5e0dc21.chunk.js": "/static/js/453.e5e0dc21.chunk.js",
-    "static/media/lomotil.jpg": "/static/media/lomotil.3f957063ea1c7147ed45.jpg",
-    "static/media/bg-img-2.jpg": "/static/media/bg-img-2.5e8261245e98fa40a2e1.jpg",
-    "static/media/bg-img-1.jpg": "/static/media/bg-img-1.84ecc531155d7e016d4d.jpg",
-    "static/media/stugeron.jpg": "/static/media/stugeron.0ec216410075a578eb24.jpg",
-    "static/media/motilium.jpg": "/static/media/motilium.5e93756797e41f26c7f8.jpg",
-    "static/media/voltaren.jpg": "/static/media/voltaren.f953a5b93f1c05ee3d80.jpg",
-    "static/media/panadol.jpg": "/static/media/panadol.25d411193a55374bde1c.jpg",
-    "static/media/bg-img-3.jpg": "/static/media/bg-img-3.238167684c6e31b85493.jpg",
-    "static/media/clarityne.jpg": "/static/media/clarityne.37fbffa2d14427e328ef.jpg",
-    "static/media/gelusil.jpg": "/static/media/gelusil.1de2a44ce9e7f3e15960.jpg",
-    "static/media/charcoal.jpeg": "/static/media/charcoal.13392f12f7aa59de6d89.jpeg",
-    "static/media/icon.svg": "/static/media/icon.3c0f8c34775dbae80e79361bafe37c1b.svg",
-    "index.html": "/index.html",
-    "main.be0158ab.css.map": "/static/css/main.be0158ab.css.map",
-    "main.1a81ad83.js.map": "/static/js/main.1a81ad83.js.map",
-    "453.e5e0dc21.chunk.js.map": "/static/js/453.e5e0dc21.chunk.js.map"
+    "main.css": "/medhealthkit/static/css/main.be0158ab.css",
+    "main.js": "/medhealthkit/static/js/main.915bfeb1.js",
+    "static/js/453.e5e0dc21.chunk.js": "/medhealthkit/static/js/453.e5e0dc21.chunk.js",
+    "static/media/lomotil.jpg": "/medhealthkit/static/media/lomotil.3f957063ea1c7147ed45.jpg",
+    "static/media/bg-img-2.jpg": "/medhealthkit/static/media/bg-img-2.5e8261245e98fa40a2e1.jpg",
+    "static/media/bg-img-1.jpg": "/medhealthkit/static/media/bg-img-1.84ecc531155d7e016d4d.jpg",
+    "static/media/stugeron.jpg": "/medhealthkit/static/media/stugeron.0ec216410075a578eb24.jpg",
+    "static/media/motilium.jpg": "/medhealthkit/static/media/motilium.5e93756797e41f26c7f8.jpg",
+    "static/media/voltaren.jpg": "/medhealthkit/static/media/voltaren.f953a5b93f1c05ee3d80.jpg",
+    "static/media/panadol.jpg": "/medhealthkit/static/media/panadol.25d411193a55374bde1c.jpg",
+    "static/media/bg-img-3.jpg": "/medhealthkit/static/media/bg-img-3.238167684c6e31b85493.jpg",
+    "static/media/clarityne.jpg": "/medhealthkit/static/media/clarityne.37fbffa2d14427e328ef.jpg",
+    "static/media/gelusil.jpg": "/medhealthkit/static/media/gelusil.1de2a44ce9e7f3e15960.jpg",
+    "static/media/charcoal.jpeg": "/medhealthkit/static/media/charcoal.13392f12f7aa59de6d89.jpeg",
+    "static/media/icon.svg": "/medhealthkit/static/media/icon.3c0f8c34775dbae80e79361bafe37c1b.svg",
+    "index.html": "/medhealthkit/index.html",
+    "main.be0158ab.css.map": "/medhealthkit/static/css/main.be0158ab.css.map",
+    "main.915bfeb1.js.map": "/medhealthkit/static/js/main.915bfeb1.js.map",
+    "453.e5e0dc21.chunk.js.map": "/medhealthkit/static/js/453.e5e0dc21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be0158ab.css",
-    "static/js/main.1a81ad83.js"
+    "static/js/main.915bfeb1.js"
   ]
 }
