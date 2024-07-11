@@ -10,7 +10,7 @@ const DosagesComponent = () => {
     useEffect(() => {
         const fetchMedicines = async () => {
             try {
-                const response = await fetch('../assets/medicine_info.json');
+                const response = await fetch('./medicine_info.json');
                 const data = await response.json();
                 setMedicines(data);
             } catch (error) {
