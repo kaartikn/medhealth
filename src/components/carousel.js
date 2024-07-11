@@ -3,6 +3,7 @@ import { Image } from 'react-bootstrap';
 import medkitImage1 from '../assets/bg-img-1.jpg';
 import medkitImage2 from '../assets/bg-img-2.jpg';
 import medkitImage3 from '../assets/bg-img-3.jpg';
+import medkitImage4 from '../assets/bg-img-4.jpeg';
 
 
 function StockImageCarousel() {
@@ -10,6 +11,9 @@ function StockImageCarousel() {
         <Carousel>
             <Carousel.Item>
                 <Image className='carousel-image' src={medkitImage1} />
+            </Carousel.Item>
+            <Carousel.Item>
+                <Image className='carousel-image' src={medkitImage4} />
             </Carousel.Item>
             <Carousel.Item>
                 <Image className='carousel-image' src={medkitImage2} />
