@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AdminLogin from './components/admin-login';
+import EditMedicines from './components/edit-medicines';
 
 const Admin = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -13,6 +14,7 @@ const Admin = () => {
       {isAuthenticated ? (
         <div>
           <h1>Shona's Editing Page</h1>
+          <EditMedicines />
             
         </div>
       ) : (

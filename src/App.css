@@ -159,4 +159,24 @@ Hero CSS done
 }
 
 
+/* Edit Page */
+
+.admin-upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.medicine-edit-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.medicine-preview {
+  width: 20em;
+  height: auto;
+}
 
