@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const AdminUploadComponent = () => {
-    const [medicines, setMedicines] = useState([]);
     const [updatedMedicines, setUpdatedMedicines] = useState([]);
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
@@ -14,8 +13,6 @@ const AdminUploadComponent = () => {
             try {
                 const response = await fetch('/medicine_info.json');
                 const data = await response.json();
-                setMedicines(data);
-                console.log(medicines);
                 setUpdatedMedicines(data);
             } catch (error) {
                 console.error('Error fetching medicines data:', error);
