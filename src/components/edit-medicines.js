@@ -63,7 +63,7 @@ const AdminUploadComponent = () => {
                     let sha = '';
                     try {
                         const imageResponse = await axios.get(
-                            `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
+                            `https://api.github.com/repos/kaartikn/medhealth/contents/public/${imageName}`,
                             {
                                 headers: {
                                     Authorization: `token ${githubAccessToken}`
@@ -76,7 +76,7 @@ const AdminUploadComponent = () => {
                     }
 
                     await axios.put(
-                        `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
+                        `https://api.github.com/repos/kaartikn/medhealth/contents/public/${imageName}`,
                         {
                             message: 'Upload image',
                             content: base64Content,
