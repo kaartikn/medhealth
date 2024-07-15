@@ -5,8 +5,7 @@ const AdminUploadComponent = () => {
     const [updatedMedicines, setUpdatedMedicines] = useState([]);
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
-    
-    const github_access_token = "token " + process.env.REACT_APP_GITHUB_TOKEN;
+    const [githubAccessToken, setGithubAccessToken] = useState('');
 
     useEffect(() => {
         const fetchMedicines = async () => {
@@ -62,7 +61,7 @@ const AdminUploadComponent = () => {
                             },
                             {
                                 headers: {
-                                    Authorization: github_access_token
+                                    Authorization: `token ${githubAccessToken}`
                                 }
                             }
                         );
@@ -78,7 +77,7 @@ const AdminUploadComponent = () => {
                 'https://api.github.com/repos/kaartikn/medhealth/contents/public/medicine_info.json',
                 {
                     headers: {
-                        Authorization: github_access_token
+                        Authorization: `token ${githubAccessToken}`
                     }
                 }
             );
@@ -93,7 +92,7 @@ const AdminUploadComponent = () => {
                 },
                 {
                     headers: {
-                        Authorization: github_access_token
+                        Authorization: `token ${githubAccessToken}`
                     }
                 }
             );
@@ -103,6 +102,7 @@ const AdminUploadComponent = () => {
 
         } catch (error) {
             console.error('Error saving data:', error);
+            setLoading(false);
         }
     };
 
@@ -118,7 +118,6 @@ const AdminUploadComponent = () => {
             </div>
         )
     }
-
 
     return (
         <div className="admin-upload-container">
@@ -172,6 +171,19 @@ const AdminUploadComponent = () => {
                     <img src={medicine.picture} alt={medicine.name} className="medicine-preview" />
                 </div>
             ))}
+
+            <br />
+
+            <div className='m-3 mb-0 admin-upload-container'>
+                <div>GitHub Access Token</div>
+                <input
+                    type="text"
+                    value={githubAccessToken}
+                    placeholder="Enter GitHub Access Token"
+                    onChange={(e) => setGithubAccessToken(e.target.value)}
+                />
+            </div>
+
 
             <button style={{ backgroundColor: "#05a66b", color:"#fff" }} onClick={handleSave}>Save</button>
         </div>
