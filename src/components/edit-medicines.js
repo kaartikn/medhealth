@@ -173,7 +173,7 @@ const AdminUploadComponent = () => {
                 </div>
             ))}
 
-            <button onClick={handleSave}>Save</button>
+            <button style={{ backgroundColor: "#05a66b", color:"#fff" }} onClick={handleSave}>Save</button>
         </div>
     );
 };
