@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/medhealth/static/css/main.9663855f.css",
-    "main.js": "/medhealth/static/js/main.d655c675.js",
-    "static/js/453.e5e0dc21.chunk.js": "/medhealth/static/js/453.e5e0dc21.chunk.js",
-    "static/media/bg-img-4.jpeg": "/medhealth/static/media/bg-img-4.546657dcf9aff6838381.jpeg",
-    "static/media/bg-img-2.jpg": "/medhealth/static/media/bg-img-2.5e8261245e98fa40a2e1.jpg",
-    "static/media/bg-img-1.jpg": "/medhealth/static/media/bg-img-1.84ecc531155d7e016d4d.jpg",
-    "static/media/bg-img-3.jpg": "/medhealth/static/media/bg-img-3.238167684c6e31b85493.jpg",
-    "static/media/icon.svg": "/medhealth/static/media/icon.3c0f8c34775dbae80e79361bafe37c1b.svg",
-    "index.html": "/medhealth/index.html",
-    "main.9663855f.css.map": "/medhealth/static/css/main.9663855f.css.map",
-    "main.d655c675.js.map": "/medhealth/static/js/main.d655c675.js.map",
-    "453.e5e0dc21.chunk.js.map": "/medhealth/static/js/453.e5e0dc21.chunk.js.map"
+    "main.css": "/static/css/main.9663855f.css",
+    "main.js": "/static/js/main.5265d4eb.js",
+    "static/js/453.e5e0dc21.chunk.js": "/static/js/453.e5e0dc21.chunk.js",
+    "static/media/bg-img-4.jpeg": "/static/media/bg-img-4.546657dcf9aff6838381.jpeg",
+    "static/media/bg-img-2.jpg": "/static/media/bg-img-2.5e8261245e98fa40a2e1.jpg",
+    "static/media/bg-img-1.jpg": "/static/media/bg-img-1.84ecc531155d7e016d4d.jpg",
+    "static/media/bg-img-3.jpg": "/static/media/bg-img-3.238167684c6e31b85493.jpg",
+    "static/media/icon.svg": "/static/media/icon.3c0f8c34775dbae80e79361bafe37c1b.svg",
+    "index.html": "/index.html",
+    "main.9663855f.css.map": "/static/css/main.9663855f.css.map",
+    "main.5265d4eb.js.map": "/static/js/main.5265d4eb.js.map",
+    "453.e5e0dc21.chunk.js.map": "/static/js/453.e5e0dc21.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9663855f.css",
-    "static/js/main.d655c675.js"
+    "static/js/main.5265d4eb.js"
   ]
 }
