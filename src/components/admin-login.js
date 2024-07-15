@@ -12,7 +12,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
     e.preventDefault();
     setError('');
 
-    if(password == "password"){
+    if(password === "password"){
         onLoginSuccess();
     } else {
         setError("Wrong Password. Please try again.")

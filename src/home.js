@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar, Image, Button, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 
 import medkitImage from './assets/icon.svg';

@@ -15,6 +15,7 @@ const AdminUploadComponent = () => {
                 const response = await fetch('/medicine_info.json');
                 const data = await response.json();
                 setMedicines(data);
+                console.log(medicines);
                 setUpdatedMedicines(data);
             } catch (error) {
                 console.error('Error fetching medicines data:', error);
