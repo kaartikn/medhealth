@@ -6,6 +6,7 @@ const AdminUploadComponent = () => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [githubAccessToken, setGithubAccessToken] = useState('');
+    const [imageChanges, setImageChanges] = useState([]);
 
     useEffect(() => {
         const fetchMedicines = async () => {
@@ -29,6 +30,10 @@ const AdminUploadComponent = () => {
                 const newMedicines = [...updatedMedicines];
                 newMedicines[index].picture = reader.result;
                 setUpdatedMedicines(newMedicines);
+
+                const newImageChanges = [...imageChanges];
+                newImageChanges[index] = reader.result;
+                setImageChanges(newImageChanges);
             };
             reader.readAsDataURL(file);
         }
@@ -46,14 +51,17 @@ const AdminUploadComponent = () => {
         setSuccess(false);
 
         try {
-            const updatedJsonContent = await Promise.all(
-                updatedMedicines.map(async (medicine) => {
-                    if (medicine.picture.startsWith('data:image')) {
-                        const base64Content = medicine.picture.split(',')[1];
-                        const med_name = medicine.name.split(" ")[0].toLowerCase();
-                        const imageName = `public/medicines/${med_name}.jpg`;
+            // Upload images iteratively
+            for (let i = 0; i < imageChanges.length; i++) {
+                const imageData = imageChanges[i];
+                if (imageData && imageData.startsWith('data:image')) {
+                    const base64Content = imageData.split(',')[1];
+                    const med_name = updatedMedicines[i].name.split(" ")[0].toLowerCase();
+                    const imageName = `medicines/${med_name}.jpg`;
 
-                        // Fetch the current file info to get the sha
+                    // Fetch the current file info to get the sha
+                    let sha = '';
+                    try {
                         const imageResponse = await axios.get(
                             `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
                             {
@@ -62,29 +70,30 @@ const AdminUploadComponent = () => {
                                 }
                             }
                         );
-
-                        const sha = imageResponse.data.sha;
-
-                        await axios.put(
-                            `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
-                            {
-                                message: 'Upload image',
-                                content: base64Content,
-                                sha: sha
-                            },
-                            {
-                                headers: {
-                                    Authorization: `token ${githubAccessToken}`
-                                }
-                            }
-                        );
-
-                        medicine.picture = `/${imageName}`;
+                        sha = imageResponse.data.sha;
+                    } catch (error) {
+                        // If the image does not exist, sha will remain empty
                     }
-                    return medicine;
-                })
-            );
 
+                    await axios.put(
+                        `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
+                        {
+                            message: 'Upload image',
+                            content: base64Content,
+                            sha: sha ? sha : undefined
+                        },
+                        {
+                            headers: {
+                                Authorization: `token ${githubAccessToken}`
+                            }
+                        }
+                    );
+
+                    updatedMedicines[i].picture = `/${imageName}`;
+                }
+            }
+
+            // Replace the JSON file with the updated content
             const jsonResponse = await axios.get(
                 'https://api.github.com/repos/kaartikn/medhealth/contents/public/medicine_info.json',
                 {
@@ -98,7 +107,7 @@ const AdminUploadComponent = () => {
                 'https://api.github.com/repos/kaartikn/medhealth/contents/public/medicine_info.json',
                 {
                     message: 'Update medicines data',
-                    content: btoa(JSON.stringify(updatedJsonContent, null, 2)),
+                    content: btoa(JSON.stringify(updatedMedicines, null, 2)),
                     sha: jsonResponse.data.sha
                 },
                 {
@@ -117,17 +126,38 @@ const AdminUploadComponent = () => {
         }
     };
 
-    if (loading){
-        return <div>Loading ....</div>
+    const handleAddMedicine = () => {
+        const newMedicine = {
+            name: '',
+            composition: '',
+            indication: '',
+            regimen: '',
+            additionalInfo: '',
+            picture: ''
+        };
+        setUpdatedMedicines([...updatedMedicines, newMedicine]);
+        setImageChanges([...imageChanges, null]);
+    };
+
+    const handleDeleteMedicine = (index) => {
+        const newMedicines = updatedMedicines.filter((_, i) => i !== index);
+        setUpdatedMedicines(newMedicines);
+
+        const newImageChanges = imageChanges.filter((_, i) => i !== index);
+        setImageChanges(newImageChanges);
+    };
+
+    if (loading) {
+        return <div>Loading ....</div>;
     }
 
-    if (success){
+    if (success) {
         return (
             <div>
                 <p>Page successfully updated!</p>
                 <a href="/">Go to the main page</a>
             </div>
-        )
+        );
     }
 
     return (
@@ -180,10 +210,13 @@ const AdminUploadComponent = () => {
                         onChange={(e) => handleFileChange(index, e)}
                     />
                     <img src={medicine.picture} alt={medicine.name} className="medicine-preview" />
+                    <button onClick={() => handleDeleteMedicine(index)}>Delete</button>
                 </div>
             ))}
 
             <br />
+            
+            <button style={{ backgroundColor: "#007bff", color: "#fff" }} onClick={handleAddMedicine}>Add Medicine</button>
 
             <div className='m-3 mb-0 admin-upload-container'>
                 <div>GitHub Access Token</div>
@@ -195,8 +228,8 @@ const AdminUploadComponent = () => {
                 />
             </div>
 
+            <button style={{ backgroundColor: "#05a66b", color: "#fff" }} onClick={handleSave}>Save</button>
 
-            <button style={{ backgroundColor: "#05a66b", color:"#fff" }} onClick={handleSave}>Save</button>
         </div>
     );
 };
