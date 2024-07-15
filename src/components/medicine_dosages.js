@@ -28,7 +28,7 @@ const DosagesComponent = () => {
                 {medicines.map((medicine, index) => (
                     <Col md={3} key={index} className="mb-4">
                         <Card className="h-100">
-                            <img src={medicine.picture} alt="Picture of the medicine" className="card-image-fit"/>
+                            <img src={medicine.picture} alt="The relevant medicine" className="card-image-fit"/>
                             <Card.Body className="d-flex flex-column">
                                 <Card.Title><b>{medicine.name}</b></Card.Title>
                                 <Card.Text>
