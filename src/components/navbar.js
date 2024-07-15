@@ -17,11 +17,6 @@ const NavbarComponent = () => {
           />{' '}
           <span style={{color: "#05a66b"}}>MED</span><span style={{color: "#f5eddf"}}>KIT</span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-          </Nav>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
