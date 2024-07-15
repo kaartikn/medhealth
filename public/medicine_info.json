@@ -70,5 +70,21 @@
     "regimen": "1 capsule (20mg) once daily before meals / 2 hours post meal.",
     "additionalInfo": "",
     "picture": "/medicines/omeprazole.jpg"
+  },
+  {
+    "name": "CAFERGOT",
+    "composition": "Ergotamine tartrate 1 mg + Caffeine 100 mg",
+    "indication": "Acute migraine",
+    "regimen": "2 tablets taken immediately. Another 1 tablet can be taken if pain persist after 30 minutes.",
+    "additionalInfo": "Maximum: 6 tablets daily & 10 tablets weekly.",
+    "picture": "/medicines/cafergot.jpg"
+  },
+  {
+    "name": "PANADOL",
+    "composition": "Paracetamol 500mg Tablet",
+    "indication": "Fever and mild - moderate pain relief",
+    "regimen": "1 - 2 tablets (500 - 1000 mg) 4x/day after meals.",
+    "additionalInfo": "Maximum daily dose: 4g.",
+    "picture": "/medicines/panadol.jpg"
   }
 ]
