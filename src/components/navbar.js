@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import medkitImage from '../assets/icon.svg'; // Adjust the path accordingly
 
 const NavbarComponent = () => {
