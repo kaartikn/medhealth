@@ -49,15 +49,28 @@ const AdminUploadComponent = () => {
             const updatedJsonContent = await Promise.all(
                 updatedMedicines.map(async (medicine) => {
                     if (medicine.picture.startsWith('data:image')) {
-                        // If the image was updated, upload the image
                         const base64Content = medicine.picture.split(',')[1];
                         const med_name = medicine.name.split(" ")[0].toLowerCase();
                         const imageName = `public/medicines/${med_name}.jpg`;
+
+                        // Fetch the current file info to get the sha
+                        const imageResponse = await axios.get(
+                            `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
+                            {
+                                headers: {
+                                    Authorization: `token ${githubAccessToken}`
+                                }
+                            }
+                        );
+
+                        const sha = imageResponse.data.sha;
+
                         await axios.put(
                             `https://api.github.com/repos/kaartikn/medhealth/contents/${imageName}`,
                             {
                                 message: 'Upload image',
-                                content: base64Content
+                                content: base64Content,
+                                sha: sha
                             },
                             {
                                 headers: {
@@ -65,14 +78,13 @@ const AdminUploadComponent = () => {
                                 }
                             }
                         );
-                        // Update the picture path after successful upload
+
                         medicine.picture = `/${imageName}`;
                     }
                     return medicine;
                 })
             );
 
-            // Fetch the current JSON file
             const jsonResponse = await axios.get(
                 'https://api.github.com/repos/kaartikn/medhealth/contents/public/medicine_info.json',
                 {
@@ -82,7 +94,6 @@ const AdminUploadComponent = () => {
                 }
             );
 
-            // Update the JSON file with the new data
             await axios.put(
                 'https://api.github.com/repos/kaartikn/medhealth/contents/public/medicine_info.json',
                 {
