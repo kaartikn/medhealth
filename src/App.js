@@ -6,12 +6,12 @@ import Admin from './admin';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shona" element={<Admin />} />
-      </Routes>
-    </Router>
+
+      <div className="App">
+        <h1>Home Page</h1>
+      </div>
+      
+
   );
 }
 

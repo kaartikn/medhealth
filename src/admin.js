@@ -9,6 +9,7 @@ const Admin = () => {
     setIsAuthenticated(true);
   };
 
+
   return (
     <div>
       {isAuthenticated ? (

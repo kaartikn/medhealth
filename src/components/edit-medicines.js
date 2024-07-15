@@ -4,9 +4,10 @@ import axios from 'axios';
 const AdminUploadComponent = () => {
     const [medicines, setMedicines] = useState([]);
     const [updatedMedicines, setUpdatedMedicines] = useState([]);
-    const github_access_token = "token " + process.env.TOKEN_GHUB;
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
+    
+    const github_access_token = "token " + process.env.REACT_APP_GITHUB_TOKEN;
 
     useEffect(() => {
         const fetchMedicines = async () => {
@@ -120,6 +121,7 @@ const AdminUploadComponent = () => {
         )
     }
 
+
     return (
         <div className="admin-upload-container">
             {updatedMedicines.map((medicine, index) => (
@@ -172,6 +174,7 @@ const AdminUploadComponent = () => {
                     <img src={medicine.picture} alt={medicine.name} className="medicine-preview" />
                 </div>
             ))}
+
             <button onClick={handleSave}>Save</button>
         </div>
     );
