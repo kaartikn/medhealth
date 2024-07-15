@@ -1,0 +1,66 @@
+[
+    {
+        "name": "STUGERON 25MG",
+        "composition": "Cinnarizine 25mg Tablet",
+        "indication": "Motion sickness or Vertigo",
+        "regimen": "1 tablet (25mg) 2 hours before travelling and 0.5 tablets (12.5mg) every 8 hours during the journey.",
+        "additionalInfo": "May cause drowsiness. Do not drive or operate heavy machinery.",
+        "picture": "/medicines/stugeron.jpg"
+    },
+    {
+        "name": "VOLTAREN 50MG",
+        "composition": "Diclofenac Sodium 50mg Tablet",
+        "indication": "Pain and Inflammation",
+        "regimen": "1 tablet (50mg) every 8 hours as needed.",
+        "additionalInfo": "Take with food to avoid stomach upset.",
+        "picture": "/medicines/voltaren.jpg"
+    },
+    {
+        "name": "LOMOTIL 25/0.025MG",
+        "composition": "Diphenoxylate 25mg / Atropine 0.025mg Tablet",
+        "indication": "Diarrhea",
+        "regimen": "1-2 tablets (25/0.025mg) every 6 hours as needed.",
+        "additionalInfo": "May cause drowsiness. Do not drive or operate heavy machinery.",
+        "picture": "/medicines/lomotil.jpg"
+    },
+    {
+        "name": "CHARCOAL 200MG",
+        "composition": "Activated Charcoal 200mg Tablet",
+        "indication": "Gas and Bloating",
+        "regimen": "1-2 tablets (200mg) after meals as needed.",
+        "additionalInfo": "Drink plenty of water when taking charcoal.",
+        "picture": "/medicines/charcoal.jpeg"
+    },
+    {
+        "name": "CLARITYNE 10MG",
+        "composition": "Loratadine 10mg Tablet",
+        "indication": "Allergy Relief",
+        "regimen": "1 tablet (10mg) once daily.",
+        "additionalInfo": "Non-drowsy formula.",
+        "picture": "/medicines/clarityne.jpg"
+    },
+    {
+        "name": "MOTILIUM 10MG",
+        "composition": "Domperidone 10mg Tablet",
+        "indication": "Nausea and Vomiting",
+        "regimen": "1 tablet (10mg) 3 times daily before meals.",
+        "additionalInfo": "Consult a doctor if symptoms persist.",
+        "picture": "/medicines/motilium.jpg"
+    },
+    {
+        "name": "PANADOL 500MG",
+        "composition": "Paracetamol 500mg Tablet",
+        "indication": "Pain and Fever",
+        "regimen": "1-2 tablets (500mg) every 4-6 hours as needed.",
+        "additionalInfo": "Do not exceed 8 tablets in 24 hours.",
+        "picture": "/medicines/panadol.jpg"
+    },
+    {
+        "name": "GELUSIL CHEWABLE",
+        "composition": "Aluminum Hydroxide / Magnesium Hydroxide Chewable Tablet",
+        "indication": "Heartburn and Indigestion",
+        "regimen": "Chew 1-2 tablets as needed.",
+        "additionalInfo": "Follow with a glass of water.",
+        "picture": "/medicines/gelusil.jpg"
+    }
+]
