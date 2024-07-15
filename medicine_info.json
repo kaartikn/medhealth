@@ -54,13 +54,5 @@
     "regimen": "1-2 tablets (500mg) every 4-6 hours as needed.",
     "additionalInfo": "Do not exceed 8 tablets in 24 hours.",
     "picture": "/medicines/panadol.jpg"
-  },
-  {
-    "name": "GELUSIL CHEWABLE",
-    "composition": "Aluminum Hydroxide / Magnesium Hydroxide Chewable Tablet",
-    "indication": "Heartburn and Indigestion",
-    "regimen": "Chew 1-2 tablets as needed.",
-    "additionalInfo": "Follow with a glass of water.",
-    "picture": "/medicines/gelusil.jpg"
   }
 ]
