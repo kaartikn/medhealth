@@ -78,5 +78,13 @@
     "regimen": "2 tablets taken immediately. Another 1 tablet can be taken if pain persist after 30 minutes.",
     "additionalInfo": "Maximum: 6 tablets daily & 10 tablets weekly.",
     "picture": "/medicines/cafergot.jpg"
+  },
+  {
+    "name": "FAMOTIDINE 40MG",
+    "composition": "",
+    "indication": "",
+    "regimen": "",
+    "additionalInfo": "",
+    "picture": "/medicines/famotidine.jpg"
   }
 ]
