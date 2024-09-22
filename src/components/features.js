@@ -7,7 +7,7 @@ const EssentialFeatures = () => {
   return (
 
     
-
+    <>
     <div className='d-flex justify-content-center'>
       <div className="container mt-3 text-start">
       
@@ -51,6 +51,7 @@ const EssentialFeatures = () => {
       </div>
 
     </div>
+    </>
 
     
 

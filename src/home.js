@@ -29,7 +29,16 @@ function Home() {
           </Row>
         </Container>
 
-        <div className='d-flex justify-content-center align-items-center mt-5'>
+        <div className="d-flex justify-content-center align-items-center mt-2">
+          <p className="mt-2 text-center">
+            Please fill in your details{' '}
+            <a href="https://docs.google.com/forms/d/1FFSINEv-XtqtsVr8DSdH4fhoon1LSvEI9Dr6uTMNFf0/">
+              here if you have purchased a MedKit.
+            </a>
+          </p>
+        </div>
+
+        <div className='d-flex justify-content-center align-items-center mt-2'>
 
           <img
             src={medkitImage}
