@@ -3,6 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 
 import medkitImage from './assets/icon.svg';
+import searchPic from "./assets/med_search.jpeg";
+
+
 import StockImageCarousel from './components/carousel';
 import NavbarComponent from './components/navbar';
 import DosagesComponent from './components/medicine_dosages';
@@ -37,6 +40,18 @@ function Home() {
             </a>
           </p>
         </div>
+
+        <div className='d-flex justify-content-center align-items-center mt-2'>
+
+          <img
+            src={searchPic}
+            // className="d-inline-block align-top svg-text-color"
+            alt="MedKit logo"
+            style={{ height: '30em' }}
+          />
+
+        </div>
+
 
         <div className='d-flex justify-content-center align-items-center mt-2'>
 
